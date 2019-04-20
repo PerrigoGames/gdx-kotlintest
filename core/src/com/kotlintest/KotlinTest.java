@@ -10,7 +10,7 @@ public class KotlinTest extends ApplicationAdapter {
 	SpriteBatch batch;
 	Texture img;
 
-	private static final boolean CREATE_KOTLIN_OBJECT = false;
+	private static final boolean CREATE_KOTLIN_OBJECT = true;
 	
 	@Override
 	public void create () {
