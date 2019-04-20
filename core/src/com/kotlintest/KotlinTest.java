@@ -9,11 +9,17 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 public class KotlinTest extends ApplicationAdapter {
 	SpriteBatch batch;
 	Texture img;
+
+	private static final boolean CREATE_KOTLIN_OBJECT = false;
 	
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
 		img = new Texture("badlogic.jpg");
+		A a = new A();
+		if (CREATE_KOTLIN_OBJECT) {
+			B b = new B();
+		}
 	}
 
 	@Override
